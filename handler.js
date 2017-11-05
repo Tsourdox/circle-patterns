@@ -11,7 +11,7 @@ function init() {
     multiplierSpan.innerText = multiplier;
 
     window.addEventListener("resize", onWindowResize);
-    draw();
+    onWindowResize();
 }
 
 function nrOfDotsChanged(value) {
@@ -31,10 +31,10 @@ function onWindowResize() {
     var width = window.innerWidth;
     var height = window.innerHeight;
     
-    if (width > height) {
+    if (width * 1.2 > height) {
         // Landscape
-        canvas.width = height - 120;
-        canvas.height = height - 120;
+        canvas.width = height - 140;
+        canvas.height = height - 140;
     } else {
         // Portrait
         canvas.width = width;

@@ -12,20 +12,20 @@
     </head>
     <body>
         <div class="container">
-            
             <canvas width="700" height="700" id="canvas"></canvas>
             
-            <div class="input">
-                <span>Points: </span>
-                <input id="dots-input" type="range" min="2" max="1000" step="1" oninput="nrOfDotsChanged(value)" onchange="nrOfDotsChanged(value)"/>
-                <span id="dots"></span>
+            <div class="inputs">
+                <div class="input">
+                    <span>Points: </span>
+                    <input id="dots-input" type="range" min="2" max="1000" step="1" oninput="nrOfDotsChanged(value)" onchange="nrOfDotsChanged(value)"/>
+                    <span id="dots"></span>
+                </div>
+                <div class="input">
+                    <span>Multiplier: </span>
+                    <input id="multiplier-input" type="range" min="2" max="1000" step="1" oninput="multiplierChanged(value)" onchange="multiplierChanged(value)"/>
+                    <span id="multiplier"></span>
+                </div>
             </div>
-            <div class="input">
-                <span>Multiplier: </span>
-                <input id="multiplier-input" type="range" min="2" max="1000" step="1" oninput="multiplierChanged(value)" onchange="multiplierChanged(value)"/>
-                <span id="multiplier"></span>
-            </div>
-            
         </div>
 
         <script>
