@@ -4,37 +4,19 @@
     <head>
         <title>Something special</title>
 
-        <style>
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-            .input {
-                display: flex;
-                align-items: flex-start;
-                margin: 8px;
-            }
+        <link rel="stylesheet" href="./slider.css">
+        <link rel="stylesheet" href="./styles.css">
 
-            input {
-                width: 400px;
-            }
-
-            #canvas {
-                width: 800px;
-                height: 700px;
-            }
-            
-        </style>
+        <script src="./draw.js"></script>
+        <script src="./handler.js"></script>
     </head>
     <body>
         <div class="container">
             
-            <canvas width="800" height="700" id="canvas"></canvas>
+            <canvas width="700" height="700" id="canvas"></canvas>
             
             <div class="input">
-                <span>Nr of dots: </span>
+                <span>Points: </span>
                 <input id="dots-input" type="range" min="2" max="1000" step="1" oninput="nrOfDotsChanged(value)" onchange="nrOfDotsChanged(value)"/>
                 <span id="dots"></span>
             </div>
@@ -46,7 +28,9 @@
             
         </div>
 
-        <script src="./script.js"></script>
+        <script>
+            init();
+        </script>
 
     </body>
 </html>

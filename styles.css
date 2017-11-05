@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    width: 100%;
+}
+
+.input > span {
+    margin: 6px 0px;
+}
