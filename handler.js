@@ -33,8 +33,8 @@ function onWindowResize() {
     
     if (width * 1.2 > height) {
         // Landscape
-        canvas.width = height - 140;
-        canvas.height = height - 140;
+        canvas.width = height - 120;
+        canvas.height = height - 120;
     } else {
         // Portrait
         canvas.width = width;
