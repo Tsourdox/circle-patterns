@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Something special</title>
+
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .input {
+                display: flex;
+                align-items: flex-start;
+                margin: 8px;
+            }
+
+            input {
+                width: 400px;
+            }
+
+            #canvas {
+                width: 800px;
+                height: 700px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <canvas width="800" height="700" id="canvas"></canvas>
+            
+            <div class="input">
+                <span>Nr of dots: </span>
+                <input id="dots-input" type="range" min="2" max="1000" step="1" oninput="nrOfDotsChanged(value)" onchange="nrOfDotsChanged(value)"/>
+                <span id="dots"></span>
+            </div>
+            <div class="input">
+                <span>Multiplier: </span>
+                <input id="multiplier-input" type="range" min="2" max="1000" step="1" oninput="multiplierChanged(value)" onchange="multiplierChanged(value)"/>
+                <span id="multiplier"></span>
+            </div>
+            
+        </div>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>
